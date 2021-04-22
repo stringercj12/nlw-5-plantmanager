@@ -5,6 +5,8 @@ import AppLoading from 'expo-app-loading';
 import { UserIdentification } from './src/pages/UserIdentification';
 import { Confirmation } from './src/pages/Confirmation';
 
+import Routes from './src/routes';
+
 export default function App() {
   let [fontsLoaded] = useFonts({
     Jost_400Regular,
@@ -16,6 +18,6 @@ export default function App() {
   }
 
   return (
-    <Confirmation />
+    <Routes />
   );
 }
